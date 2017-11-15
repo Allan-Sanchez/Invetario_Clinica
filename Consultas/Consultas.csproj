@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LibConexionBD">
+      <HintPath>..\..\..\..\Downloads\Documents\Universidad\programacion\Liprerias_Comunes_C#\LibConexionBD\LibConexionBD\bin\Debug\LibConexionBD.dll</HintPath>
+    </Reference>
+    <Reference Include="LibParametros">
+      <HintPath>..\..\..\..\Downloads\Documents\Universidad\programacion\Liprerias_Comunes_C#\LibParametros\LibParametros\bin\Debug\LibParametros.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Consulta_Paciente.cs" />
+    <Compile Include="Clases\Login.cs" />
+    <Compile Include="Clases\UsuarioLogeado.cs" />
     <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="Clases\Utilidades.cs" />
     <Compile Include="ConsultaMedicaDataSet.Designer.cs">
@@ -70,6 +78,12 @@
     <Compile Include="Formularios\FrmInicial.Designer.cs">
       <DependentUpon>FrmInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInicial.resx">
       <DependentUpon>FrmInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -177,6 +194,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_medical_icon_1_1290990.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

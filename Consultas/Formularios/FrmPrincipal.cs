@@ -35,6 +35,7 @@ namespace Consultas
         {
             nuevo = true;
             id_CosultaTextBox.Text = "";
+            medicoTextBox.Focus();
             HabilitarCampos();
             LimpiarCampos();
 
@@ -151,6 +152,8 @@ namespace Consultas
             {
                 total_CostosBindingSource.Position = posicion;
             }
+            
+
         }
 
         private bool ValidarCampos()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Consultas.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,15 @@ namespace Consultas.Formularios
 {
     public partial class FrmInicial : Form
     {
+        private UsuarioLogeado usuario_LOgiado;
+
+        internal UsuarioLogeado Usuario_LOgiado
+        {
+            get { return usuario_LOgiado; }
+            set { usuario_LOgiado = value; }
+        }
+
+
         public FrmInicial()
         {
             InitializeComponent();
@@ -44,6 +54,28 @@ namespace Consultas.Formularios
 
             miscostos.MdiParent = this;
             miscostos.Show();
+        }
+
+        private void FrmInicial_Load(object sender, EventArgs e)
+        {
+            tsbUsuario.Text=usuario_LOgiado.nombre +" "+ usuario_LOgiado.apellido;
+
+            EstableserPermisos();
+        }
+
+        private void EstableserPermisos()
+        {
+            if (usuario_LOgiado.id_perfil!=1)
+            {
+                procesosToolStripMenuItem.Enabled = false;
+                usuariosToolStripMenuItem.Enabled = false;
+            }
+        }
+
+
+        private void FrmInicial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            salirToolStripMenuItem_Click(sender, e);
         }
     }
 }

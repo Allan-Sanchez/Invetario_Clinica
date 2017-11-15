@@ -51,6 +51,10 @@ namespace Consultas.Formularios
         private void ActualizarDatos()
         {
             this.total_CostosTableAdapter.Fill(this.consultaMedicaDataSet.total_Costos);
+            txtCosto.Text = String.Format("{0:C2}", Consulta_Paciente.Suma_Consultas());
+            txtOtros_Costos.Text = String.Format("{0:C2}", Consulta_Paciente.Suma_Otros_Costos());
+            txtTotal_Costos.Text = String.Format("{0:C2}", Consulta_Paciente.Suma_Total());
+            txtTOTAL_IVA.Text = String.Format("{0:C2}", Consulta_Paciente.SUMA_CON_IVA());   
         }
 
         private void btnBorrar_Solo_uno_Click(object sender, EventArgs e)
@@ -62,6 +66,11 @@ namespace Consultas.Formularios
 
             Consulta_Paciente.DeleteTodas_las_Consultas();
             MessageBox.Show("Datos Borrados Exitosamente", "Confirmacion");
+            this.total_CostosTableAdapter.Fill(this.consultaMedicaDataSet.total_Costos);
+            txtCosto.Text = "0";
+            txtOtros_Costos.Text = "0";
+            txtTotal_Costos.Text = "0";
+            txtTOTAL_IVA.Text = "0";
         }
 
 

@@ -85,7 +85,7 @@
             usuarioLabel.Location = new System.Drawing.Point(14, 94);
             usuarioLabel.Name = "usuarioLabel";
             usuarioLabel.Size = new System.Drawing.Size(46, 13);
-            usuarioLabel.TabIndex = 2;
+            usuarioLabel.TabIndex = 4;
             usuarioLabel.Text = "Usuario:";
             // 
             // claveLabel
@@ -94,7 +94,7 @@
             claveLabel.Location = new System.Drawing.Point(23, 120);
             claveLabel.Name = "claveLabel";
             claveLabel.Size = new System.Drawing.Size(37, 13);
-            claveLabel.TabIndex = 4;
+            claveLabel.TabIndex = 6;
             claveLabel.Text = "Clave:";
             // 
             // nombreLabel
@@ -103,7 +103,7 @@
             nombreLabel.Location = new System.Drawing.Point(13, 42);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(47, 13);
-            nombreLabel.TabIndex = 6;
+            nombreLabel.TabIndex = 0;
             nombreLabel.Text = "Nombre:";
             // 
             // apellidoLabel
@@ -112,7 +112,7 @@
             apellidoLabel.Location = new System.Drawing.Point(13, 68);
             apellidoLabel.Name = "apellidoLabel";
             apellidoLabel.Size = new System.Drawing.Size(47, 13);
-            apellidoLabel.TabIndex = 8;
+            apellidoLabel.TabIndex = 2;
             apellidoLabel.Text = "Apellido:";
             // 
             // iD_PerfilLabel
@@ -121,7 +121,7 @@
             iD_PerfilLabel.Location = new System.Drawing.Point(13, 146);
             iD_PerfilLabel.Name = "iD_PerfilLabel";
             iD_PerfilLabel.Size = new System.Drawing.Size(47, 13);
-            iD_PerfilLabel.TabIndex = 10;
+            iD_PerfilLabel.TabIndex = 8;
             iD_PerfilLabel.Text = "ID Perfil:";
             // 
             // usuariosBindingNavigator
@@ -348,7 +348,7 @@
             this.usuarioTextBox.Location = new System.Drawing.Point(66, 91);
             this.usuarioTextBox.Name = "usuarioTextBox";
             this.usuarioTextBox.Size = new System.Drawing.Size(204, 20);
-            this.usuarioTextBox.TabIndex = 3;
+            this.usuarioTextBox.TabIndex = 5;
             // 
             // claveTextBox
             // 
@@ -357,7 +357,7 @@
             this.claveTextBox.Location = new System.Drawing.Point(66, 117);
             this.claveTextBox.Name = "claveTextBox";
             this.claveTextBox.Size = new System.Drawing.Size(204, 20);
-            this.claveTextBox.TabIndex = 5;
+            this.claveTextBox.TabIndex = 7;
             // 
             // nombreTextBox
             // 
@@ -366,7 +366,7 @@
             this.nombreTextBox.Location = new System.Drawing.Point(66, 39);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(204, 20);
-            this.nombreTextBox.TabIndex = 7;
+            this.nombreTextBox.TabIndex = 1;
             // 
             // apellidoTextBox
             // 
@@ -375,7 +375,7 @@
             this.apellidoTextBox.Location = new System.Drawing.Point(66, 65);
             this.apellidoTextBox.Name = "apellidoTextBox";
             this.apellidoTextBox.Size = new System.Drawing.Size(204, 20);
-            this.apellidoTextBox.TabIndex = 9;
+            this.apellidoTextBox.TabIndex = 3;
             // 
             // iD_PerfilTextBox
             // 
@@ -384,7 +384,7 @@
             this.iD_PerfilTextBox.Location = new System.Drawing.Point(66, 143);
             this.iD_PerfilTextBox.Name = "iD_PerfilTextBox";
             this.iD_PerfilTextBox.Size = new System.Drawing.Size(100, 20);
-            this.iD_PerfilTextBox.TabIndex = 11;
+            this.iD_PerfilTextBox.TabIndex = 9;
             // 
             // pictureBox1
             // 

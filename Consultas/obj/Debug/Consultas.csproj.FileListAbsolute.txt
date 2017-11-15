@@ -11,3 +11,21 @@ c:\users\allan sanchez\documents\visual studio 2012\Projects\Consultas\Consultas
 c:\users\allan sanchez\documents\visual studio 2012\Projects\Consultas\Consultas\obj\Debug\Consultas.Formularios.FrmInicial.resources
 c:\users\allan sanchez\documents\visual studio 2012\Projects\Consultas\Consultas\obj\Debug\Consultas.Formularios.frmUsuarios.resources
 c:\users\allan sanchez\documents\visual studio 2012\Projects\Consultas\Consultas\obj\Debug\Consultas.Formularios.frmCosto_Totales.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\Consultas.exe.config
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.exe
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.pdb
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\Consultas.exe
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\Consultas.pdb
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.csprojResolveAssemblyReference.cache
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Formularios.frmBuscar_Consulta.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Formularios.frmCosto_Totales.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Formularios.FrmInicial.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.FrmPrincipal.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Formularios.frmUsuarios.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Properties.Resources.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.csproj.GenerateResource.Cache
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Formularios.frmLogin.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibConexionBD.dll
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibParametros.dll
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibConexionBD.pdb
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibParametros.pdb

@@ -38,9 +38,9 @@
             System.Windows.Forms.Label observaconesLabel;
             System.Windows.Forms.Label id_CosultaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.total_CostosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.total_CostosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.consultaMedicaDataSet = new Consultas.ConsultaMedicaDataSet();
@@ -79,6 +79,7 @@
             this.id_CosultaTextBox = new System.Windows.Forms.TextBox();
             this.total_CostosTableAdapter = new Consultas.ConsultaMedicaDataSetTableAdapters.total_CostosTableAdapter();
             this.tableAdapterManager = new Consultas.ConsultaMedicaDataSetTableAdapters.TableAdapterManager();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             medicoLabel = new System.Windows.Forms.Label();
             nombresLabel = new System.Windows.Forms.Label();
             consultaLabel = new System.Windows.Forms.Label();
@@ -92,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.total_CostosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaMedicaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotal_Costos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // medicoLabel
@@ -100,7 +102,7 @@
             medicoLabel.Location = new System.Drawing.Point(12, 70);
             medicoLabel.Name = "medicoLabel";
             medicoLabel.Size = new System.Drawing.Size(45, 13);
-            medicoLabel.TabIndex = 4;
+            medicoLabel.TabIndex = 2;
             medicoLabel.Text = "Medico:";
             // 
             // nombresLabel
@@ -109,7 +111,7 @@
             nombresLabel.Location = new System.Drawing.Point(12, 108);
             nombresLabel.Name = "nombresLabel";
             nombresLabel.Size = new System.Drawing.Size(52, 13);
-            nombresLabel.TabIndex = 6;
+            nombresLabel.TabIndex = 4;
             nombresLabel.Text = "Nombres:";
             // 
             // consultaLabel
@@ -118,7 +120,7 @@
             consultaLabel.Location = new System.Drawing.Point(13, 146);
             consultaLabel.Name = "consultaLabel";
             consultaLabel.Size = new System.Drawing.Size(51, 13);
-            consultaLabel.TabIndex = 8;
+            consultaLabel.TabIndex = 6;
             consultaLabel.Text = "Consulta:";
             // 
             // costoLabel
@@ -145,7 +147,7 @@
             fecha_ConsultaLabel.Location = new System.Drawing.Point(9, 190);
             fecha_ConsultaLabel.Name = "fecha_ConsultaLabel";
             fecha_ConsultaLabel.Size = new System.Drawing.Size(102, 13);
-            fecha_ConsultaLabel.TabIndex = 14;
+            fecha_ConsultaLabel.TabIndex = 8;
             fecha_ConsultaLabel.Text = "&Fecha  de Consulta:";
             // 
             // observaconesLabel
@@ -154,7 +156,7 @@
             observaconesLabel.Location = new System.Drawing.Point(406, 111);
             observaconesLabel.Name = "observaconesLabel";
             observaconesLabel.Size = new System.Drawing.Size(79, 13);
-            observaconesLabel.TabIndex = 16;
+            observaconesLabel.TabIndex = 14;
             observaconesLabel.Text = "Observacones:";
             // 
             // id_CosultaLabel
@@ -163,7 +165,7 @@
             id_CosultaLabel.Location = new System.Drawing.Point(21, 36);
             id_CosultaLabel.Name = "id_CosultaLabel";
             id_CosultaLabel.Size = new System.Drawing.Size(59, 13);
-            id_CosultaLabel.TabIndex = 17;
+            id_CosultaLabel.TabIndex = 0;
             id_CosultaLabel.Text = "ID Cosulta:";
             // 
             // total_CostosBindingNavigator
@@ -363,7 +365,7 @@
             this.dgvTotal_Costos.Name = "dgvTotal_Costos";
             this.dgvTotal_Costos.ReadOnly = true;
             this.dgvTotal_Costos.Size = new System.Drawing.Size(1143, 220);
-            this.dgvTotal_Costos.TabIndex = 1;
+            this.dgvTotal_Costos.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -406,10 +408,10 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Costo";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewTextBoxColumn5.HeaderText = "Costo";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
@@ -417,10 +419,10 @@
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Otros_Costos";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn6.HeaderText = "Otros Costos";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -428,10 +430,10 @@
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "Total_Costos";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn9.HeaderText = "Total Costos";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.ReadOnly = true;
@@ -451,7 +453,7 @@
             this.medicoTextBox.Location = new System.Drawing.Point(83, 67);
             this.medicoTextBox.Name = "medicoTextBox";
             this.medicoTextBox.Size = new System.Drawing.Size(252, 20);
-            this.medicoTextBox.TabIndex = 5;
+            this.medicoTextBox.TabIndex = 3;
             // 
             // nombresTextBox
             // 
@@ -460,7 +462,7 @@
             this.nombresTextBox.Location = new System.Drawing.Point(83, 105);
             this.nombresTextBox.Name = "nombresTextBox";
             this.nombresTextBox.Size = new System.Drawing.Size(252, 20);
-            this.nombresTextBox.TabIndex = 7;
+            this.nombresTextBox.TabIndex = 5;
             // 
             // consultaTextBox
             // 
@@ -469,7 +471,7 @@
             this.consultaTextBox.Location = new System.Drawing.Point(83, 143);
             this.consultaTextBox.Name = "consultaTextBox";
             this.consultaTextBox.Size = new System.Drawing.Size(252, 20);
-            this.consultaTextBox.TabIndex = 9;
+            this.consultaTextBox.TabIndex = 7;
             // 
             // costoTextBox
             // 
@@ -496,7 +498,7 @@
             this.fecha_ConsultaDateTimePicker.Location = new System.Drawing.Point(135, 187);
             this.fecha_ConsultaDateTimePicker.Name = "fecha_ConsultaDateTimePicker";
             this.fecha_ConsultaDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.fecha_ConsultaDateTimePicker.TabIndex = 15;
+            this.fecha_ConsultaDateTimePicker.TabIndex = 9;
             // 
             // observaconesTextBox
             // 
@@ -506,7 +508,7 @@
             this.observaconesTextBox.Multiline = true;
             this.observaconesTextBox.Name = "observaconesTextBox";
             this.observaconesTextBox.Size = new System.Drawing.Size(220, 92);
-            this.observaconesTextBox.TabIndex = 17;
+            this.observaconesTextBox.TabIndex = 15;
             // 
             // id_CosultaTextBox
             // 
@@ -515,7 +517,7 @@
             this.id_CosultaTextBox.Location = new System.Drawing.Point(83, 33);
             this.id_CosultaTextBox.Name = "id_CosultaTextBox";
             this.id_CosultaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_CosultaTextBox.TabIndex = 18;
+            this.id_CosultaTextBox.TabIndex = 1;
             // 
             // total_CostosTableAdapter
             // 
@@ -529,12 +531,23 @@
             this.tableAdapterManager.UpdateOrder = Consultas.ConsultaMedicaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuariosTableAdapter = null;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Consultas.Properties.Resources.if_medical_icon_1_1290990;
+            this.pictureBox1.Location = new System.Drawing.Point(872, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1175, 479);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(id_CosultaLabel);
             this.Controls.Add(this.id_CosultaTextBox);
             this.Controls.Add(observaconesLabel);
@@ -563,6 +576,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.total_CostosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultaMedicaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotal_Costos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -608,6 +622,7 @@
         private System.Windows.Forms.ToolStripButton tsbBuscar;
         private System.Windows.Forms.ToolStripButton tsbEliminar;
         private System.Windows.Forms.TextBox id_CosultaTextBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
