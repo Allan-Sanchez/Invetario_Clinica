@@ -29,3 +29,6 @@ C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\Li
 C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibParametros.dll
 C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibConexionBD.pdb
 C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\bin\Debug\LibParametros.pdb
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\Consultas.Formularios.frmReporte.resources
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\RdlCompile.cache
+C:\Users\Allan Sanchez\Documents\GitHub\Invetario_Clinica\Consultas\obj\Debug\RdlCompile.compiled

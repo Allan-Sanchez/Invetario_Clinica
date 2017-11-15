@@ -117,7 +117,7 @@ SELECT id_Cosulta, Medico, Nombres, Consulta, Costo, Otros_Costos, fecha_Consult
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy7" GeneratorSourceName="SUMA_CON_IVA" Modifier="Public" Name="SUMA_CON_IVA" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="SUMA_CON_IVA">
+              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy7" GeneratorSourceName="SUMA_CON_IVA" Modifier="Public" Name="SUMA_CON_IVA" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="SUMA_CON_IVA">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT SUM((Costo +Otros_Costos)*0.12 ) FROM Consultas</CommandText>
@@ -125,7 +125,7 @@ SELECT id_Cosulta, Medico, Nombres, Consulta, Costo, Otros_Costos, fecha_Consult
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Suma_Consultas" Modifier="Public" Name="Suma_Consultas" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="Suma_Consultas">
+              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Suma_Consultas" Modifier="Public" Name="Suma_Consultas" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="Suma_Consultas">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT SUM(Costo) FROM Consultas</CommandText>
@@ -133,7 +133,7 @@ SELECT id_Cosulta, Medico, Nombres, Consulta, Costo, Otros_Costos, fecha_Consult
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Suma_Otros_Costos" Modifier="Public" Name="Suma_Otros_Costos" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="Suma_Otros_Costos">
+              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Suma_Otros_Costos" Modifier="Public" Name="Suma_Otros_Costos" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="Suma_Otros_Costos">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT SUM(Otros_Costos) FROM Consultas</CommandText>
@@ -141,7 +141,7 @@ SELECT id_Cosulta, Medico, Nombres, Consulta, Costo, Otros_Costos, fecha_Consult
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Suma_Total" Modifier="Public" Name="Suma_Total" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="Suma_Total">
+              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Suma_Total" Modifier="Public" Name="Suma_Total" QueryType="Scalar" ScalarCallRetval="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="Suma_Total">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT SUM(Costo + Otros_Costos) FROM Consultas</CommandText>
@@ -149,7 +149,7 @@ SELECT id_Cosulta, Medico, Nombres, Consulta, Costo, Otros_Costos, fecha_Consult
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateConsulta" Modifier="Public" Name="UpdateConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="UpdateConsulta">
+              <DbSource ConnectionRef="ConsultaMedicaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateConsulta" Modifier="Public" Name="UpdateConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="UpdateConsulta">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [dbo].[Consultas] SET [Medico] = @Medico, [Nombres] = @Nombres, [Consulta] = @Consulta, [Costo] = @Costo, [Otros_Costos] = @Otros_Costos, [fecha_Consulta] = @fecha_Consulta, [Observacones] = @Observacones WHERE [id_Cosulta] = @id_Cosulta</CommandText>
@@ -333,7 +333,7 @@ SELECT Usuario, Clave, Nombre, Apellido, ID_Perfil FROM Usuarios WHERE (Usuario 
   <xs:element name="ConsultaMedicaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ConsultaMedicaDataSet" msprop:Generator_UserDSName="ConsultaMedicaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Consultas" msprop:Generator_TableClassName="ConsultasDataTable" msprop:Generator_TableVarName="tableConsultas" msprop:Generator_TablePropName="Consultas" msprop:Generator_RowDeletingName="ConsultasRowDeleting" msprop:Generator_RowChangingName="ConsultasRowChanging" msprop:Generator_RowEvHandlerName="ConsultasRowChangeEventHandler" msprop:Generator_RowDeletedName="ConsultasRowDeleted" msprop:Generator_UserTableName="Consultas" msprop:Generator_RowChangedName="ConsultasRowChanged" msprop:Generator_RowEvArgName="ConsultasRowChangeEvent" msprop:Generator_RowClassName="ConsultasRow">
+        <xs:element name="Consultas" msprop:Generator_TableClassName="ConsultasDataTable" msprop:Generator_TableVarName="tableConsultas" msprop:Generator_RowChangedName="ConsultasRowChanged" msprop:Generator_TablePropName="Consultas" msprop:Generator_RowDeletingName="ConsultasRowDeleting" msprop:Generator_RowChangingName="ConsultasRowChanging" msprop:Generator_RowEvHandlerName="ConsultasRowChangeEventHandler" msprop:Generator_RowDeletedName="ConsultasRowDeleted" msprop:Generator_RowClassName="ConsultasRow" msprop:Generator_UserTableName="Consultas" msprop:Generator_RowEvArgName="ConsultasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_Cosulta" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_Cosulta" msprop:Generator_ColumnPropNameInRow="id_Cosulta" msprop:Generator_ColumnPropNameInTable="id_CosultaColumn" msprop:Generator_UserColumnName="id_Cosulta" type="xs:int" />
@@ -371,7 +371,7 @@ SELECT Usuario, Clave, Nombre, Apellido, ID_Perfil FROM Usuarios WHERE (Usuario 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="total_Costos" msprop:Generator_TableClassName="total_CostosDataTable" msprop:Generator_TableVarName="tabletotal_Costos" msprop:Generator_RowChangedName="total_CostosRowChanged" msprop:Generator_TablePropName="total_Costos" msprop:Generator_RowDeletingName="total_CostosRowDeleting" msprop:Generator_RowChangingName="total_CostosRowChanging" msprop:Generator_RowEvHandlerName="total_CostosRowChangeEventHandler" msprop:Generator_RowDeletedName="total_CostosRowDeleted" msprop:Generator_RowClassName="total_CostosRow" msprop:Generator_UserTableName="total_Costos" msprop:Generator_RowEvArgName="total_CostosRowChangeEvent">
+        <xs:element name="total_Costos" msprop:Generator_TableClassName="total_CostosDataTable" msprop:Generator_TableVarName="tabletotal_Costos" msprop:Generator_TablePropName="total_Costos" msprop:Generator_RowDeletingName="total_CostosRowDeleting" msprop:Generator_RowChangingName="total_CostosRowChanging" msprop:Generator_RowEvHandlerName="total_CostosRowChangeEventHandler" msprop:Generator_RowDeletedName="total_CostosRowDeleted" msprop:Generator_UserTableName="total_Costos" msprop:Generator_RowChangedName="total_CostosRowChanged" msprop:Generator_RowEvArgName="total_CostosRowChangeEvent" msprop:Generator_RowClassName="total_CostosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_Cosulta" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_Cosulta" msprop:Generator_ColumnPropNameInRow="id_Cosulta" msprop:Generator_ColumnPropNameInTable="id_CosultaColumn" msprop:Generator_UserColumnName="id_Cosulta" type="xs:int" />
@@ -410,7 +410,7 @@ SELECT Usuario, Clave, Nombre, Apellido, ID_Perfil FROM Usuarios WHERE (Usuario 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Usuarios" msprop:Generator_TableClassName="UsuariosDataTable" msprop:Generator_TableVarName="tableUsuarios" msprop:Generator_RowChangedName="UsuariosRowChanged" msprop:Generator_TablePropName="Usuarios" msprop:Generator_RowDeletingName="UsuariosRowDeleting" msprop:Generator_RowChangingName="UsuariosRowChanging" msprop:Generator_RowEvHandlerName="UsuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuariosRowDeleted" msprop:Generator_RowClassName="UsuariosRow" msprop:Generator_UserTableName="Usuarios" msprop:Generator_RowEvArgName="UsuariosRowChangeEvent">
+        <xs:element name="Usuarios" msprop:Generator_TableClassName="UsuariosDataTable" msprop:Generator_TableVarName="tableUsuarios" msprop:Generator_TablePropName="Usuarios" msprop:Generator_RowDeletingName="UsuariosRowDeleting" msprop:Generator_RowChangingName="UsuariosRowChanging" msprop:Generator_RowEvHandlerName="UsuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuariosRowDeleted" msprop:Generator_UserTableName="Usuarios" msprop:Generator_RowChangedName="UsuariosRowChanged" msprop:Generator_RowEvArgName="UsuariosRowChangeEvent" msprop:Generator_RowClassName="UsuariosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario">

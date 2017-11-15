@@ -73,6 +73,12 @@ namespace Consultas.Formularios
             txtTOTAL_IVA.Text = "0";
         }
 
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            frmReporte mireporte =new frmReporte();
+            mireporte.ShowDialog();
+        }
+
 
     }
 }

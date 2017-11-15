@@ -38,8 +38,11 @@
     <Reference Include="LibParametros">
       <HintPath>..\..\..\..\Downloads\Documents\Universidad\programacion\Liprerias_Comunes_C#\LibParametros\LibParametros\bin\Debug\LibParametros.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,11 +94,22 @@
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Program.cs" />
+    <Compile Include="Formularios\frmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmReporte.Designer.cs">
+      <DependentUpon>frmReporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmUsuarios.Designer.cs">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewConsultaMedicaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewConsultaMedicaDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\frmBuscar_Consulta.resx">
@@ -113,9 +127,13 @@
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmReporte.resx">
+      <DependentUpon>frmReporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MiReporte.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +154,17 @@
     </None>
     <None Include="ConsultaMedicaDataSet.xss">
       <DependentUpon>ConsultaMedicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewConsultaMedicaDataSet1.xsc">
+      <DependentUpon>NewConsultaMedicaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NewConsultaMedicaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewConsultaMedicaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewConsultaMedicaDataSet1.xss">
+      <DependentUpon>NewConsultaMedicaDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

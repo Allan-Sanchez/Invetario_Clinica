@@ -263,6 +263,7 @@
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnCancelar
             // 
